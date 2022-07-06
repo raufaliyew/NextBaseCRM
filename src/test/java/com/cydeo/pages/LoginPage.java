@@ -26,4 +26,10 @@ public class LoginPage {
     @FindBy(css = "div>a")
     public WebElement forgotPasswordBtn;
 
+    public void login(String userName,String passWord){
+        username.sendKeys(userName);
+        password.sendKeys(passWord);
+        loginBtn.click();
+    }
+
 }
