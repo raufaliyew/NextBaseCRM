@@ -1,18 +1,27 @@
 package com.cydeo.step_definitions;
 
+import com.cydeo.pages.BasePage;
+import com.cydeo.pages.LoginPage;
+import com.cydeo.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class CreatingPollStepDefinitions {
 
+    LoginPage loginPage = new LoginPage();
+    BasePage basePage = new BasePage();
+
     @Given("User logins with HR credentials")
     public void user_logins_with_hr_credentials() {
+        loginPage.login();
+        BrowserUtils.waitFor(2);
 
     }
-    @When("User clicks {string} tab")
-    public void user_clicks_tab(String string) {
 
+    @When("User clicks {string} tab")
+    public void user_clicks_tab(String tabName) {
+        basePage.chooseTab(tabName);
     }
 
     @When("User adds Title")

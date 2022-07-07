@@ -1,5 +1,6 @@
 package com.cydeo.pages;
 
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -15,7 +16,6 @@ public class BasePage {
 
     // this method helps to click one of the tabs(Message, Task, Event, More)
     public void chooseTab(String tabName){
-
         WebElement tab = Driver.getDriver().findElement(By.xpath("//span[.='"+tabName+"']"));
         tab.click();
     }
