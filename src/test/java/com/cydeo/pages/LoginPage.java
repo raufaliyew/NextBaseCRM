@@ -1,5 +1,6 @@
 package com.cydeo.pages;
 
+import com.cydeo.utilities.ConfReader;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,9 +27,10 @@ public class LoginPage {
     @FindBy(css = "div>a")
     public WebElement forgotPasswordBtn;
 
-    public void login(String userName,String passWord){
-        username.sendKeys(userName);
-        password.sendKeys(passWord);
+    public void login(){
+        Driver.getDriver().get(ConfReader.getProperty("env"));
+        username.sendKeys(ConfReader.getProperty("username"));
+        password.sendKeys(ConfReader.getProperty("password"));
         loginBtn.click();
     }
 
