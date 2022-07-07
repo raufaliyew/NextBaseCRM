@@ -28,7 +28,6 @@ public class LoginPage {
     public WebElement forgotPasswordBtn;
 
     public void login(){
-        Driver.getDriver().get(ConfReader.getProperty("env"));
         username.sendKeys(ConfReader.getProperty("username"));
         password.sendKeys(ConfReader.getProperty("password"));
         loginBtn.click();
