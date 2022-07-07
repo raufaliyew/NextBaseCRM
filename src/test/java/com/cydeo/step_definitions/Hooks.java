@@ -1,5 +1,6 @@
 package com.cydeo.step_definitions;
 
+import com.cydeo.utilities.ConfReader;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
@@ -10,7 +11,7 @@ public class Hooks {
     //cucumber before annotation applies before each scenario
     @Before
     public void setUp(){
-
+        Driver.getDriver().get(ConfReader.getProperty("env"));
     }
 
     //cucumber after annotation applies after each scenario
