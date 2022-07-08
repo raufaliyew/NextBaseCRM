@@ -1,6 +1,8 @@
 package com.cydeo.utilities;
 
+import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -84,5 +86,14 @@ public class BrowserUtils {
      */
     public static void scrollToElement(WebElement element) {
         ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    /**
+     * Below method verifies the Title Contains
+     */
+    public static void verifyTitle(String expectedTitle){
+
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(expectedTitle));
+
     }
 }

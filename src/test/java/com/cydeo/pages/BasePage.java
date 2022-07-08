@@ -4,6 +4,8 @@ import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
@@ -27,4 +29,12 @@ public class BasePage {
         WebElement subTab = Driver.getDriver().findElement(By.xpath("//span[.='"+subTabName+"']"));
         subTab.click();
     }
+    /**
+     * Below locator allows you to locate search box
+     */
+
+    @FindBy(id = "search-textbox-input")
+    public WebElement searchBox;
+
+
 }
