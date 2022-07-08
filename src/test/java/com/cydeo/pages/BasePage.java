@@ -36,5 +36,11 @@ public class BasePage {
     @FindBy(id = "search-textbox-input")
     public WebElement searchBox;
 
+    /**
+     * Below locator allows you to locate "Nothing found" Element
+     * once you search, it's only locating the element
+     */
+    @FindBy(xpath = "//div[@id='feed-empty-wrap']//div")
+    public WebElement invalidSearch;
 
 }

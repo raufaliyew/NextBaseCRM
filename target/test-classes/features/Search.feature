@@ -1,4 +1,4 @@
-@CRM
+
 Feature: Search Feature
   Agile Story: As a User I should be able to search from search box
 
@@ -9,3 +9,10 @@ Feature: Search Feature
     When User enters a valid info (employee,doc,post,task) "Mail"in the search box
     And User hits enter button
     Then User can see "Mail" is in the Title
+
+
+  @B26G27-68 @B26G27-70 @B26G27-66 @CRM
+  Scenario: users can not find invalid info, the page should show "Nothing found"
+    When User enters a invalid info in the search box
+    And User hits enter button
+    Then User can see "Nothing found"

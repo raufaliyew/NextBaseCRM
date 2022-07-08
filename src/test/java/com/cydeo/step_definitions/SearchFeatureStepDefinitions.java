@@ -4,6 +4,8 @@ import com.cydeo.pages.BasePage;
 import com.cydeo.pages.LoginPage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
+import com.github.javafaker.Faker;
+import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,6 +17,7 @@ import org.openqa.selenium.interactions.Actions;
 public class SearchFeatureStepDefinitions extends BasePage {
 
     LoginPage loginPage = new LoginPage();
+    Faker faker= new Faker();
 
 
     @Given("hr user is on the Home page")
@@ -41,5 +44,16 @@ public class SearchFeatureStepDefinitions extends BasePage {
     @Then("User can see {string} is in the Title")
     public void userCanSeeIsInTheTitle(String string) {
     BrowserUtils.verifyTitle(string);
+    }
+
+    @When("User enters a invalid info in the search box")
+    public void user_enters_a_invalid_info_in_the_search_box() {
+        searchBox.click();
+        searchBox.sendKeys(faker.animal().name());
+    }
+    @Then("User can see {string}")
+    public void user_can_see(String expectedMessage) {
+        String actual= invalidSearch.getText();
+        Assert.assertEquals(expectedMessage,actual);
     }
 }
