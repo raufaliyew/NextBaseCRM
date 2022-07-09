@@ -18,7 +18,7 @@ LoginPage loginPage=new LoginPage();
     }
     @Given("user click logout button")
     public void user_click_logout_button() {
-       loginPage.logOutBtn.click();
+       basePage.logOutBtn.click();
     }
     @Then("user should be on login page")
     public void user_should_be_on_login_page() {

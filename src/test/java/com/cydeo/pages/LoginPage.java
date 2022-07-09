@@ -33,9 +33,6 @@ public class LoginPage {
         loginBtn.click();
     }
 
-    @FindBy(xpath = "//span[text()='Log out']")
-    public WebElement logOutBtn;
-
 
 
 }

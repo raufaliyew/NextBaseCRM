@@ -57,5 +57,11 @@ public class BasePage {
 
     @FindBy(xpath = "//span[@id='user-name']")
     public WebElement userBtn;
+     /*
+     Below is locator for logout button
+     */
+
+    @FindBy(xpath = "//span[text()='Log out']")
+    public WebElement logOutBtn;
 
 }
