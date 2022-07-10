@@ -25,7 +25,9 @@ public class CreatingPollStepDefinitions extends BasePage{
 
     @When("User adds Title")
     public void user_adds_title() {
-//        setTitle("Test");
+        setTitle("Test");
+        //new lines
+        System.out.println("Test");
     }
 
     @When("User adds question to question field")

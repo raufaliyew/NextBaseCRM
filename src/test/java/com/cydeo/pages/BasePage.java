@@ -55,5 +55,12 @@ public class BasePage {
         titleInput.sendKeys(title);
 
     }
+    public void setle(String title){
+
+
+
+    }
+
+
 
 }
