@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
+import java.awt.*;
+
 public class BasePage {
 
     public BasePage() {
@@ -42,5 +44,16 @@ public class BasePage {
      */
     @FindBy(xpath = "//div[@id='feed-empty-wrap']//div")
     public WebElement invalidSearch;
+
+    @FindBy(xpath = "//iframe[@class='bx-editor-iframe']")
+    public WebElement titleFrame;
+
+    public void setTitle(String title){
+
+        Driver.getDriver().switchTo().frame(titleFrame);
+        WebElement titleInput = Driver.getDriver().findElement(By.xpath("//body[@contenteditable='true']"));
+        titleInput.sendKeys(title);
+
+    }
 
 }

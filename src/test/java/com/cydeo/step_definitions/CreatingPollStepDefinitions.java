@@ -7,10 +7,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class CreatingPollStepDefinitions {
+public class CreatingPollStepDefinitions extends BasePage{
 
     LoginPage loginPage = new LoginPage();
-    BasePage basePage = new BasePage();
 
     @Given("User logins with HR credentials")
     public void user_logins_with_hr_credentials() {
@@ -21,13 +20,14 @@ public class CreatingPollStepDefinitions {
 
     @When("User clicks {string} tab")
     public void user_clicks_tab(String tabName) {
-        basePage.chooseTab(tabName);
+        chooseTab(tabName);
     }
 
     @When("User adds Title")
     public void user_adds_title() {
-
+//        setTitle("Test");
     }
+
     @When("User adds question to question field")
     public void user_adds_question_to_question_field() {
 

@@ -3,7 +3,7 @@ Feature: As a user, I should be able to create a poll
 
   Background: Logging as a HR user
     Given User logins with HR credentials
-    When User clicks "Poll" tab
+    When User clicks "Message" tab
 
 
   @B26G27-59 @B26G27-79 @B26G27-66
