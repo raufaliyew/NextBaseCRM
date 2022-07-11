@@ -20,7 +20,7 @@ public class BasePage {
 
     // this method helps to click one of the tabs(Message, Task, Event, More)
     public void chooseTab(String tabName){
-        WebElement tab = Driver.getDriver().findElement(By.xpath("//span[.='"+tabName+"']"));
+        WebElement tab = Driver.getDriver().findElement(By.xpath("//div[@class='microblog-top-tabs-visible']//span[.='"+tabName+"']"));
         tab.click();
     }
 
@@ -55,11 +55,7 @@ public class BasePage {
         titleInput.sendKeys(title);
 
     }
-    public void setle(String title){
 
-
-
-    }
 
 
 
