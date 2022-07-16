@@ -1,4 +1,4 @@
-
+@smoke
 Feature: Search Feature
   Agile Story: As a User I should be able to search from search box
 

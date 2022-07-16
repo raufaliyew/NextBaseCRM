@@ -1,4 +1,4 @@
-@B26G27-80
+@B26G27-80 @smoke
 Feature: As a user, I should be able to create a poll
 
   Background: Logging as a HR user
