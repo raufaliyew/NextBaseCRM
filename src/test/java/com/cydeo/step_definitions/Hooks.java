@@ -1,16 +1,20 @@
 package com.cydeo.step_definitions;
 
+import com.cydeo.utilities.BrowserUtils;
+import com.cydeo.utilities.ConfReader;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+
+import java.security.PublicKey;
 
 public class Hooks {
 
     //cucumber before annotation applies before each scenario
     @Before
     public void setUp(){
-
+        Driver.getDriver().get(ConfReader.getProperty("env"));
     }
 
     //cucumber after annotation applies after each scenario
@@ -20,6 +24,7 @@ public class Hooks {
             byte[] screenShots = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenShots, "image/png", scenario.getName());
         }
+       Driver.closeDriver();
 
     }
 
@@ -49,5 +54,9 @@ public class Hooks {
     public void tearDownStep(){
 
 
+    }
+    @AfterStep
+    public void waitForAsec(){
+        BrowserUtils.waitFor(1);
     }
 }
