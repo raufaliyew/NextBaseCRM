@@ -21,8 +21,6 @@ public class Driver {
 
         if (driverPool.get() == null) {
 
-
-
             synchronized (Driver.class) {
 
 
