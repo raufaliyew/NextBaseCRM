@@ -1,3 +1,4 @@
+@smoke
 Feature: User can send,attach and cancel message
 Background:
 	Given user is on main page

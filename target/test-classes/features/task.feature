@@ -1,4 +1,4 @@
-@B26G27-94 @CRM
+@B26G27-94 @CRM @smoke
 Feature: Default
 
 	
