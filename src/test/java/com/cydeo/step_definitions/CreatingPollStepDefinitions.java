@@ -39,7 +39,7 @@ public class CreatingPollStepDefinitions extends BasePage{
 
     @When("User adds multiple answers to answer fields")
     public void user_adds_multiple_answers_to_answer_fields() {
-        setAnswer(1,1,"Cyde");
+        setAnswer(1,1,"Cydeo");
         setAnswer(2,1,"Cybertek");
     }
 
