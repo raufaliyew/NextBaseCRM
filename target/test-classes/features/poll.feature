@@ -1,4 +1,4 @@
-@B26G27-80
+@B26G27-80 @smoke
 Feature: As a user, I should be able to create a poll
 
   Background: Logging as a HR user
@@ -7,7 +7,7 @@ Feature: As a user, I should be able to create a poll
 
 
   @B26G27-59 @B26G27-79 @B26G27-66
-  Scenario: user creates a poll with Q/A
+  Scenario: creating Poll with single question/single answer
     And User adds Title
     And User adds question to question field
     And User adds multiple answers to answer fields
@@ -27,7 +27,8 @@ Feature: As a user, I should be able to create a poll
     And User adds Title
     And User adds question to question field
     And User adds multiple answers to answer fields
-    And User enables "allow multiple Choice" checkbox
+    And User enables Allow multiple Choice checkbox
+    And User clicks Send button
     Then User should be able to select multiple answers in Activity Stream
 
   @B26G27-62 @B26G27-79 @B26G27-66

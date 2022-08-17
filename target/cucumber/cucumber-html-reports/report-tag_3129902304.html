@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>10 Jul 2022, 19:51</td>
+      <td>22 Jul 2022, 21:53</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@B26G27-82</td>
-          <td      class="passed"    >18</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >9</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >7</td>
           <td >0</td>
           <td >0</td>
           <td class="total">18</td>
 
-          <td  class="passed"    >4</td>
-          <td >0</td>
+          <td  class="passed"    >2</td>
+          <td  class="failed"    >2</td>
           <td class="total">4</td>
 
-          <td class="duration" data-value="7000384200">7.000</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="30403728600">30.403</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -177,6 +177,7 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
        <a href="report-tag_3129902303.html">@B26G27-81</a>
        <a href="report-tag_3129902304.html">@B26G27-82</a>
        <a href="report-tag_3129902246.html">@B26G27-66</a>
@@ -184,12 +185,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.194</span>
+  <span class="lead-duration duration">10.373</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">User shouldnt be able to post empty msg</span>
 
@@ -200,7 +201,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention">		//Given user is on main page</div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -222,7 +223,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">1.981</span>
+  <span class="lead-duration duration">5.036</span>
 
           </div>
 
@@ -239,9 +240,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -251,15 +252,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">user click on message button</span>
 
-  <span class="lead-duration duration">0.083</span>
+  <span class="lead-duration duration">10.371</span>
 
 </div>
 
@@ -300,6 +301,43 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-5">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class='microblog-top-tabs-visible']//span[.='Message']&quot;}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-765TMRM', ip: '192.168.1.224', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\emree\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00b5bc4389bb8eebf50a10d2ff76d8aa
+*** Element info: {Using=xpath, value=//div[@class='microblog-top-tabs-visible']//span[.='Message']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.cydeo.pages.BasePage.chooseTab(BasePage.java:21)
+	at com.cydeo.step_definitions.MsgStepDefs.userClickOnMessageButton(MsgStepDefs.java:27)
+	at &#10045;.user click on message button(file:///C:/Users/emree/IdeaProjects/NextBaseCRMGroup/src/test/resources/features/message.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -310,7 +348,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -322,13 +360,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.009</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -342,9 +380,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.023</span>
 
           </div>
 
@@ -362,20 +400,20 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click send button</span>
 
-  <span class="lead-duration duration">0.074</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -385,9 +423,9 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-7" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -417,9 +455,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-8">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -429,13 +467,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-7" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.009</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -447,9 +485,9 @@ $(document).ready(function() {
 
         </div>
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -469,20 +507,20 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see <span class="argument">&quot;The message title is not specified&quot;</span> msg</span>
 
-  <span class="lead-duration duration">0.035</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -492,9 +530,9 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-9" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -524,9 +562,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-10">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -536,13 +574,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-9" class="inner-level collapse collapsable-details ">
+    <div id="after-10" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.010</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -554,11 +592,11 @@ $(document).ready(function() {
 
         </div>
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
           </div>
 
@@ -580,7 +618,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -592,13 +630,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.642</span>
+  <span class="lead-duration duration">7.744</span>
 
           </div>
 
@@ -607,6 +645,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>User shouldnt be able to post empty msg</a>
+      <a href="embeddings/embedding_585641570.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_585641570.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -625,6 +678,7 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
        <a href="report-tag_3129902279.html">@B26G27-78</a>
        <a href="report-tag_3129902304.html">@B26G27-82</a>
        <a href="report-tag_3129902246.html">@B26G27-66</a>
@@ -633,10 +687,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.858</span>
+  <span class="lead-duration duration">4.438</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -649,72 +703,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention">		//Given user is on main page</div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-13" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-12" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.setUp()</span>
-
-  <span class="lead-duration duration">2.020</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user input a msg in message feature</span>
-
-  <span class="lead-duration duration">0.795</span>
-
-</div>
-
-
-
-  <div class="inner-level hooks-step-before">
     <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
 
 <div class="brief passed">
@@ -731,9 +723,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.349</span>
 
           </div>
 
@@ -749,73 +741,28 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
 
 <div class="brief passed">
-  <span class="keyword indention">Hooks</span>
+  <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
-    </div>
-
-    <div id="after-15" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
-
-  <span class="lead-duration duration">1.014</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
   </div>
 
-      </div>
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user click send button</span>
+  <span class="name">user input a msg in message feature</span>
 
-  <span class="lead-duration duration">0.062</span>
+  <span class="lead-duration duration">3.027</span>
 
 </div>
 
@@ -882,9 +829,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.003</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -898,9 +845,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.047</span>
 
           </div>
 
@@ -918,11 +865,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user should see msg on Activity Stream</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user click send button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.411</span>
 
 </div>
 
@@ -989,9 +936,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.011</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1005,9 +952,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.001</span>
 
           </div>
 
@@ -1022,148 +969,21 @@ $(document).ready(function() {
   </div>
 
       </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-20" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.628</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_3946489690.html">User can send,attach and cancel message</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3129902306.html">@B26G27-84</a>
-       <a href="report-tag_3129902304.html">@B26G27-82</a>
-       <a href="report-tag_3129902246.html">@B26G27-66</a>
-       <a href="report-tag_2149457277.html">@CRM</a>
-</div>
-
-
-  <span class="lead-duration duration">4.899</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">User should be able to cancel the message</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention">		//Given user is on main page</div>
-
-  <div id="element-21" class="collapse collapsable-details ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-22" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.setUp()</span>
-
-  <span class="lead-duration duration">1.894</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-23" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user inputs a msg</span>
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should see msg on Activity Stream</span>
 
-  <span class="lead-duration duration">0.689</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1175,7 +995,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-24" class="inner-level collapse collapsable-details ">
+    <div id="before-20" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1207,7 +1027,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-25">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1219,23 +1039,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-25" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
-
-  <span class="lead-duration duration">1.004</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
+    <div id="after-21" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -1252,18 +1056,162 @@ $(document).ready(function() {
 
 
         </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+
+  <span class="lead-duration duration">1.168</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
 
       </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-22" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">2.405</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_3946489690.html">User can send,attach and cancel message</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_3129902306.html">@B26G27-84</a>
+       <a href="report-tag_3129902304.html">@B26G27-82</a>
+       <a href="report-tag_3129902246.html">@B26G27-66</a>
+       <a href="report-tag_2149457277.html">@CRM</a>
+</div>
+
+
+  <span class="lead-duration duration">5.579</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">User should be able to cancel the message</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">		//Given user is on main page</div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-24" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.setUp()</span>
+
+  <span class="lead-duration duration">3.619</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">clicks save</span>
+  <span class="name">user inputs a msg</span>
 
-  <span class="lead-duration duration">2.067</span>
+  <span class="lead-duration duration">1.173</span>
 
 </div>
 
@@ -1330,9 +1278,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.007</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1346,9 +1294,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1368,9 +1316,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">clicks more button</span>
+  <span class="name">clicks save</span>
 
-  <span class="lead-duration duration">0.067</span>
+  <span class="lead-duration duration">2.155</span>
 
 </div>
 
@@ -1437,9 +1385,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.006</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1453,9 +1401,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1473,11 +1421,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">should see delete option</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">clicks more button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.148</span>
 
 </div>
 
@@ -1544,9 +1492,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.011</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1560,9 +1508,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1580,11 +1528,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on delete button</span>
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">should see delete option</span>
 
-  <span class="lead-duration duration">2.075</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1651,9 +1599,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.002</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1667,9 +1615,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1687,11 +1635,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">msg should be canceled</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on delete button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.100</span>
 
 </div>
 
@@ -1758,9 +1706,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.006</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1774,9 +1722,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1791,148 +1739,21 @@ $(document).ready(function() {
   </div>
 
       </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-36" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.630</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_3946489690.html">User can send,attach and cancel message</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3129902308.html">@B26G27-86</a>
-       <a href="report-tag_3129902304.html">@B26G27-82</a>
-       <a href="report-tag_3129902246.html">@B26G27-66</a>
-       <a href="report-tag_2149457277.html">@CRM</a>
-</div>
-
-
-  <span class="lead-duration duration">1.047</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify if user can attach a link to msg</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention">		//Given user is on  main page</div>
-
-  <div id="element-37" class="collapse collapsable-details ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-38" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.setUp()</span>
-
-  <span class="lead-duration duration">1.908</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-39" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user creates a message</span>
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">msg should be canceled</span>
 
-  <span class="lead-duration duration">0.790</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-40">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-36">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1944,7 +1765,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-40" class="inner-level collapse collapsable-details ">
+    <div id="before-36" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1976,7 +1797,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-41">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-37">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1988,23 +1809,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-41" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
-
-  <span class="lead-duration duration">1.007</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
+    <div id="after-37" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -2021,18 +1826,162 @@ $(document).ready(function() {
 
 
         </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+
+  <span class="lead-duration duration">1.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
 
       </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-38" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">1.100</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_3946489690.html">User can send,attach and cancel message</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_3129902308.html">@B26G27-86</a>
+       <a href="report-tag_3129902304.html">@B26G27-82</a>
+       <a href="report-tag_3129902246.html">@B26G27-66</a>
+       <a href="report-tag_2149457277.html">@CRM</a>
+</div>
+
+
+  <span class="lead-duration duration">10.011</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-39">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify if user can attach a link to msg</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">		//Given user is on  main page</div>
+
+  <div id="element-39" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-40" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.setUp()</span>
+
+  <span class="lead-duration duration">3.656</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-41">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks attach a link option</span>
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">user creates a message</span>
 
-  <span class="lead-duration duration">0.073</span>
+  <span class="lead-duration duration">10.011</span>
 
 </div>
 
@@ -2073,6 +2022,43 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-43">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class='microblog-top-tabs-visible']//span[.='Message']&quot;}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-765TMRM', ip: '192.168.1.224', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\emree\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ce8b7c8da3881eef799dc1fda674dc9
+*** Element info: {Using=xpath, value=//div[@class='microblog-top-tabs-visible']//span[.='Message']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.cydeo.pages.BasePage.chooseTab(BasePage.java:21)
+	at com.cydeo.step_definitions.MsgStepDefs.userCreatesAMessage(MsgStepDefs.java:98)
+	at &#10045;.user creates a message(file:///C:/Users/emree/IdeaProjects/NextBaseCRMGroup/src/test/resources/features/message.feature:36)
+</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -2083,7 +2069,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-43">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-44">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2095,13 +2081,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-43" class="inner-level collapse collapsable-details ">
+    <div id="after-44" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.013</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2115,7 +2101,114 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+
+  <span class="lead-duration duration">1.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user clicks attach a link option</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-45">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-45" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-46">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-46" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2135,7 +2228,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see attach link pop up</span>
 
@@ -2146,9 +2239,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-47">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2158,9 +2251,9 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-44" class="inner-level collapse collapsable-details ">
+    <div id="before-47" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -2190,9 +2283,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-45">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-48">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2202,13 +2295,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-45" class="inner-level collapse collapsable-details ">
+    <div id="after-48" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.013</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2220,9 +2313,9 @@ $(document).ready(function() {
 
         </div>
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2242,20 +2335,20 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user attach the link</span>
 
-  <span class="lead-duration duration">0.182</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-46">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-49">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2265,9 +2358,9 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-46" class="inner-level collapse collapsable-details ">
+    <div id="before-49" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -2297,9 +2390,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-47">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-50">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2309,13 +2402,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-47" class="inner-level collapse collapsable-details ">
+    <div id="after-50" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.014</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2327,9 +2420,9 @@ $(document).ready(function() {
 
         </div>
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2349,7 +2442,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user clicks save button</span>
 
@@ -2360,9 +2453,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-48">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-51">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2372,9 +2465,9 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-48" class="inner-level collapse collapsable-details ">
+    <div id="before-51" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -2404,9 +2497,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-49">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-52">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2416,13 +2509,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-49" class="inner-level collapse collapsable-details ">
+    <div id="after-52" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.004</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2434,9 +2527,9 @@ $(document).ready(function() {
 
         </div>
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2456,20 +2549,20 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see the link attached to msg</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-50">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-53">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2479,9 +2572,9 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-50" class="inner-level collapse collapsable-details ">
+    <div id="before-53" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -2511,9 +2604,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-51">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-54">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2523,13 +2616,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-51" class="inner-level collapse collapsable-details ">
+    <div id="after-54" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.010</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2541,9 +2634,9 @@ $(document).ready(function() {
 
         </div>
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2567,7 +2660,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-52">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-55">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2579,13 +2672,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-52" class="inner-level collapse collapsable-details ">
+    <div id="after-55" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.649</span>
+  <span class="lead-duration duration">1.313</span>
 
           </div>
 
@@ -2594,6 +2687,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-56" class="collapsable-control">
+      <a>Verify if user can attach a link to msg</a>
+      <a href="embeddings/embedding_1514107473.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-56" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1514107473.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
