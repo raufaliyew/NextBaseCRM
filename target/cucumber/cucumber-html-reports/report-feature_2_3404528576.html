@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>10 Jul 2022, 19:51</td>
+      <td>22 Jul 2022, 21:53</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Default</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >11</td>
+          <td      class="passed"    >11</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">13</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">11</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="11239312000">11.239</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="6875077500">6.875</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,10 +171,11 @@ $(document).ready(function() {
     <b>Tags:</b>
        <a href="report-tag_3129902337.html">@B26G27-94</a>
        <a href="report-tag_2149457277.html">@CRM</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Default</span>
 
@@ -192,6 +193,7 @@ $(document).ready(function() {
     <b>Tags:</b>
        <a href="report-tag_3129902337.html">@B26G27-94</a>
        <a href="report-tag_2149457277.html">@CRM</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
        <a href="report-tag_3129902336.html">@B26G27-93</a>
        <a href="report-tag_3129902246.html">@B26G27-66</a>
        <a href="report-tag_2149457277.html">@CRM</a>
@@ -199,12 +201,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">11.239</span>
+  <span class="lead-duration duration">6.875</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">User should be able to assign tasks by clicking Task tab</span>
 
@@ -213,9 +215,9 @@ $(document).ready(function() {
 </div>
 
   </span>
-  <div class="description indention"></div>
+  <div class="description indention">		    //Given user is on main page</div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -237,7 +239,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">1.909</span>
+  <span class="lead-duration duration">3.540</span>
 
           </div>
 
@@ -254,9 +256,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -266,15 +268,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is on main page</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user click Task feature</span>
 
-  <span class="lead-duration duration">1.153</span>
+  <span class="lead-duration duration">3.182</span>
 
 </div>
 
@@ -341,9 +343,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.000</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -357,9 +359,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -377,11 +379,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user click Task feature</span>
+  <span class="name">user click checklist</span>
 
-  <span class="lead-duration duration">10.084</span>
+  <span class="lead-duration duration">0.577</span>
 
 </div>
 
@@ -422,46 +424,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-7">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name='USER_LOGIN']&quot;}
-  (Session info: chrome=103.0.5060.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-K3060C2N', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\ermek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f558f5d63bf3f546a729760b760cd994
-*** Element info: {Using=name, value=USER_LOGIN}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
-	at com.cydeo.pages.LoginPage.login(LoginPage.java:31)
-	at com.cydeo.step_definitions.TaskStepDefs.user_click_task_feature(TaskStepDefs.java:20)
-	at &#10045;.user click Task feature(file:///C:/Users/ermek/NextBaseCRM2/src/test/resources/features/task.feature:8)
-</pre>
-      </div>
-    </div>
-  </div>
-
 
 
 
@@ -472,7 +434,7 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -484,13 +446,13 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
-  <span class="lead-duration duration">1.006</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -504,9 +466,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -524,127 +486,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user click checklist</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-  <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-9">
-
-<div class="brief failed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-9" class="inner-level collapse collapsable-details  in ">
-        <div class="hook">
-          <div class="brief skipped">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-10">
-
-<div class="brief failed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-10" class="inner-level collapse collapsable-details  in ">
-        <div class="hook">
-          <div class="brief skipped">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief skipped">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user add an item to checklist</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.089</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-11">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -654,9 +509,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-11" class="inner-level collapse collapsable-details  in ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -686,9 +541,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -698,11 +553,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details  in ">
+    <div id="after-9" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -716,11 +571,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -738,20 +593,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user click on deadline field</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.248</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-13">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -761,13 +616,13 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-13" class="inner-level collapse collapsable-details  in ">
+    <div id="before-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -793,9 +648,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-14">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -805,11 +660,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-14" class="inner-level collapse collapsable-details  in ">
+    <div id="after-11" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -823,11 +678,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -845,20 +700,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user choose date and time</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.109</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-15">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -868,9 +723,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-15" class="inner-level collapse collapsable-details  in ">
+    <div id="before-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -900,9 +755,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-16">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-13">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -912,11 +767,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-16" class="inner-level collapse collapsable-details  in ">
+    <div id="after-13" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -930,11 +785,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -952,20 +807,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user click on Time planning</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.234</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-17">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -975,9 +830,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-17" class="inner-level collapse collapsable-details  in ">
+    <div id="before-14" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -1007,9 +862,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-18">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1019,11 +874,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details  in ">
+    <div id="after-15" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1037,11 +892,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1059,20 +914,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user click on Start Task On</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.245</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-19">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1082,9 +937,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-19" class="inner-level collapse collapsable-details  in ">
+    <div id="before-16" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -1114,9 +969,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-17">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1126,11 +981,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-20" class="inner-level collapse collapsable-details  in ">
+    <div id="after-17" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1144,11 +999,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1166,20 +1021,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user click on Duration in day</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.263</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-21">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1189,9 +1044,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-21" class="inner-level collapse collapsable-details  in ">
+    <div id="before-18" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -1221,9 +1076,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-22">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-19">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1233,11 +1088,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-22" class="inner-level collapse collapsable-details  in ">
+    <div id="after-19" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1251,11 +1106,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1273,20 +1128,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user click on Finish</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.266</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-23">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1296,9 +1151,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-23" class="inner-level collapse collapsable-details  in ">
+    <div id="before-20" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -1328,9 +1183,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-24">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1340,11 +1195,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-24" class="inner-level collapse collapsable-details  in ">
+    <div id="after-21" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1358,11 +1213,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1380,20 +1235,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user select date and time</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.151</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-25">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1403,9 +1258,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-25" class="inner-level collapse collapsable-details  in ">
+    <div id="before-22" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -1435,9 +1290,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-26">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-23">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1447,11 +1302,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-26" class="inner-level collapse collapsable-details  in ">
+    <div id="after-23" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1465,11 +1320,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1487,127 +1342,20 @@ Session ID: f558f5d63bf3f546a729760b760cd994
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user click send button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-  <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-27">
-
-<div class="brief failed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-27" class="inner-level collapse collapsable-details  in ">
-        <div class="hook">
-          <div class="brief skipped">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-28">
-
-<div class="brief failed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-28" class="inner-level collapse collapsable-details  in ">
-        <div class="hook">
-          <div class="brief skipped">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief skipped">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user should see <span class="argument">&quot;Task has been created&quot;</span> pop up</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.505</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-29">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1617,9 +1365,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="before-29" class="inner-level collapse collapsable-details  in ">
+    <div id="before-24" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.setUpStep()</span>
 
@@ -1649,9 +1397,9 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-30">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-25">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1661,11 +1409,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-30" class="inner-level collapse collapsable-details  in ">
+    <div id="after-25" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1679,11 +1427,11 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
         </div>
         <div class="hook">
-          <div class="brief skipped">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownStep()</span>
+              <span class="location name">com.cydeo.step_definitions.Hooks.waitForAsec()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.000</span>
 
           </div>
 
@@ -1705,7 +1453,7 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-31">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-26">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1717,13 +1465,13 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
     </div>
 
-    <div id="after-31" class="inner-level collapse collapsable-details ">
+    <div id="after-26" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.782</span>
+  <span class="lead-duration duration">1.134</span>
 
           </div>
 
@@ -1732,21 +1480,6 @@ Session ID: f558f5d63bf3f546a729760b760cd994
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-32" class="collapsable-control">
-      <a>User should be able to assign tasks by clicking Task tab</a>
-      <a href="embeddings/embedding_-430045839.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-32" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-430045839.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
