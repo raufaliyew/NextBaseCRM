@@ -14,10 +14,10 @@ public class CreatingPollStepDefinitions extends BasePage{
     LoginPage loginPage = new LoginPage();
     private String titleText;
 
-//    @Given("User logins with HR credentials")
-//    public void user_logins_with_hr_credentials() {
-//        loginPage.login();
-//    }
+    @Given("User logins with HR credentials")
+    public void user_logins_with_hr_credentials() {
+        loginPage.login();
+    }
 
     @When("User clicks {string} tab")
     public void user_clicks_tab(String tabName) {
